@@ -6,13 +6,13 @@
 }
 
 :root {
-    /* Color palette */
-    --gold-dark: rgba(184, 134, 11, 0.9);
-    --gold-medium: rgba(218, 165, 32, 0.8);
-    --gold-light: rgba(250, 214, 137, 0.7);
-    --gold-lightest: rgba(255, 236, 179, 0.4);
-    --text-color: #333;
-    --bg-color: #fff;
+    /* Cambiar de los colores dorados a escala de grises */
+    --gold-dark: rgba(50, 50, 50, 0.9);         /* Gris oscuro */
+    --gold-medium: rgba(80, 80, 80, 0.8);       /* Gris medio */
+    --gold-light: rgba(120, 120, 120, 0.7);     /* Gris claro */
+    --gold-lightest: rgba(150, 150, 150, 0.4);  /* Gris muy claro con transparencia */
+    --text-color: #e0e0e0;                      /* Texto claro para fondo oscuro */
+    --bg-color: #121212;                        /* Fondo muy oscuro, casi negro */
 }
 
 body {
@@ -215,4 +215,24 @@ body.no-scroll {
     h1 {
         margin-top: 2.5rem;
     }
+}
+
+/* Ajustes para modo oscuro */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* Ajustar enlaces para fondo oscuro */
+a {
+    color: var(--text-color);
+}
+
+a:hover {
+    color: white;
+}
+
+/* Ajuste para elementos específicos */
+.hero-text p {
+    color: var(--text-color);
 }
