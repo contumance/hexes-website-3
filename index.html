@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEXES | Modern Metal Cult</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/components/navbar.css">
+    <link rel="stylesheet" href="css/components/hexagon.css">
+    <!-- Add favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <!-- Add Google Fonts for futuristic typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-top">
+                <h1>HEXES</h1>
+                <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            
+            <nav>
+                <!-- Desktop navigation -->
+                <ul class="desktop-nav">
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="pages/band.html">band</a></li>
+                    <li><a href="pages/gallery.html">gallery</a></li>
+                    <li><a href="pages/oracle.html">oracle</a></li>
+                    <li><a href="#follow">follow</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Menú móvil fuera del nav -->
+            <div class="mobile-nav">
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="pages/band.html">band</a></li>
+                    <li><a href="pages/gallery.html">gallery</a></li>
+                    <li><a href="pages/oracle.html">oracle</a></li>
+                    <li><a href="#follow">follow</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="hero-content">
+                    <div class="hexagon-container">
+                        <div class="hexagon hex-1 rotate-slow parallax parallax-slow"></div>
+                        <div class="hexagon hex-2 rotate-medium parallax parallax-medium"></div>
+                        <div class="hexagon hex-3 rotate-fast parallax parallax-medium"></div>
+                        <div class="hexagon hex-4 rotate-very-fast parallax parallax-fast"></div>
+                    </div>
+                    <div class="hero-text fade-in">
+                        <p>Modern Metal Cult</p>
+                        <p>Discover Our World</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer id="follow">
+            <div class="social-links">
+                <a href="#" target="_blank" rel="noopener noreferrer">Spotify</a>
+                <a href="#" target="_blank" rel="noopener noreferrer">YouTube</a>
+                <a href="#" target="_blank" rel="noopener noreferrer">Bandcamp</a>
+                <a href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Asegúrate de que el script del menú se carga ANTES que los otros scripts -->
+    <script src="js/simple-menu.js"></script>
+    <!-- Carga los scripts en el orden correcto -->
+    <!-- Primero carga scripts independientes -->
+    <script src="js/menu.js"></script>
+    
+    <!-- Luego carga scripts que pueden depender de otros -->
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/parallax.js"></script>
+    <script src="js/components/hexAnimation.js"></script>
+</body>
+</html>
